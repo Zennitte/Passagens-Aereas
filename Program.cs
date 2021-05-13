@@ -63,6 +63,15 @@ namespace Passagens_Aereas
                                         Console.WriteLine("Deseja cadastrar uma nova passagem; N para não e S para sim");
                                         string novaPassagem = Console.ReadLine().ToUpper();
 
+                                        if (novaPassagem == "N")
+                                        {
+                                            novoCadrasto = false;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Ok,faremos um novo cadrasto");
+                                        }
+
                                         c++;
                                     }
                                     else
